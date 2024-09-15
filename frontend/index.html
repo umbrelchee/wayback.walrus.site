@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walrus Wayback Machine</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo .walrus {
+            font-size: 3em;
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .logo .wayback {
+            font-size: 3em;
+            color: #343a40;
+            font-weight: bold;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            flex: 1;
+            padding: 15px;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-right: 10px;
+            transition: border-color 0.3s;
+        }
+        input[type="text"]:focus {
+            border-color: #0056b3;
+            outline: none;
+        }
+        button {
+            padding: 15px 25px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #dee2e6;
+        }
+        th {
+            background-color: #f8f9fa;
+            color: #495057;
+            font-weight: 600;
+        }
+        tbody tr:hover {
+            background-color: #e9ecef;
+        }
+        a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: 600;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .pagination button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin: 0 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .pagination button:hover {
+            background-color: #0056b3;
+        }
+        .pagination button[disabled] {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+        .pagination .page-number {
+            margin: 0 10px;
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 600;
+        }
+        .spinner {
+            display: none;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .spinner i {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="walrus">🦭</div>
+            <div class="wayback">Walrus Wayback</div>
+        </div>
+        <form id="archiveForm">
+            <input type="text" id="url" name="url" placeholder="https://example.com" required>
+            <button type="submit">Archive</button>
+        </form>
+        <div id="spinner" class="spinner"><i class="fas fa-spinner fa-spin"></i> Archiving...</div>
+        <h2>Recently Archived URLs</h2>
+        <table id="archiveTable">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>URL</th>
+                    <th>View</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button id="prevPage" onclick="changePage(-1)" disabled>Previous</button>
+            <span id="pageNumber" class="page-number">Page 1 of X</span>
+            <button id="nextPage" onclick="changePage(1)" disabled>Next</button>
+        </div>
+    </div>
+    <script src="/static/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "single-file-cli": "^2.0.59"
+  }
+}
