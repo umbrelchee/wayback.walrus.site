@@ -1,7 +1,6 @@
 # Decentralized Wayback Machine
 
-[UPDATE] Now powered by Walrus for decentralized and secure storage on the Sui blockchain. Explore our live archive at https://wayback.walrus.site/
-]
+Explore our live archive at https://wayback.walrus.site/
 ## Overview
 
 The Decentralized Wayback Machine is a revolutionary archival tool designed to capture, store, and retrieve snapshots of websites across the internet. Unlike traditional web archives, this project leverages Walrus technology on the Sui blockchain to provide a secure, permanent, and fully decentralized solution for preserving the web’s history.
