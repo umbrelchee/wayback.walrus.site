@@ -1,6 +1,6 @@
 # Decentralized Wayback Machine
 
-[UPDATE] Now powered by Walrus for decentralized and secure storage on the Sui blockchain. Explore our live archive at (https://decentralizedwayback.walrus.site).
+[UPDATE] Now powered by Walrus for decentralized and secure storage on the Sui blockchain. Explore our live archive at https://wayback.walrus.site/
 ](https://wayback.walrus.site/)
 ## Overview
 
