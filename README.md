@@ -26,32 +26,9 @@ Traditional web archives rely on centralized servers that are vulnerable to cens
 - Scalable Storage: By using Walrus, we combine on-chain data integrity with off-chain storage efficiency, allowing for scalable and cost-effective archiving.
 - Community-Driven: Users can contribute to the archive by capturing snapshots of important web pages, building a comprehensive and communal web history.
 
-### Why Walrus?
-
-Walrus is a decentralized storage solution tailored for the Sui blockchain. It enhances the archival process by providing:
+**Walrus is a decentralized storage solution tailored for the Sui blockchain. It enhances the archival process by providing**:
 
 - Scalability: Off-chain storage scalability combined with on-chain data verification ensures efficient and cost-effective archiving.
 - Security: Data is stored securely across multiple nodes, reducing the risk of loss or tampering.
 - Decentralized Access: Archives are accessible globally without any centralized authority, promoting transparency and freedom of information.
 
-### Get Involved
-
-We invite developers, historians, and all internet users to join us in preserving the web’s history. [Try our tool now](https://decentralizedwayback.walrus.site) and start archiving the internet today!
-
-[...Installation and Usage Instructions...]
-
-## Contribution
-
-Help us make the internet’s history accessible and secure for everyone. Contributions are welcome! Whether you’re a developer, a researcher, or simply passionate about preserving information, we encourage you to contribute.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For more information, issues, or collaboration opportunities, please contact us at [your-email@example.com](mailto:your-email@example.com).
-
----
-
-Together, let’s build a decentralized and indelible archive of the web!
